@@ -10,27 +10,12 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Inter', sans-serif;
+}
 
 h1, h2, h3, h4, h5 {
     font-family: 'Roboto Slab', serif;
 }
-
-/* The animation code */
-@keyframes example {
-    0%   {background-color: #475953;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
-  }
-
-.shop-now-button {
-    background: #475953;
-    color: white;
-    min-width: 260px;
-    animation-name: example;
-    animation-duration: 4s;
-}
-
+  
 /* from Bulma */
 
 .icon {
@@ -49,12 +34,40 @@ h1, h2, h3, h4, h5 {
     width: fit-content;
 }
 
+.bg-black {
+    background: #000 !important;
+}
+
+.text-color {
+    color: #444444!important;
+}
+
+.border-color {
+    border: 1px solid  #475953 !important;
+}
 
 
 .btn-color {
     background: #475953;
     color: white;
 }
+
+.shop-now-button {
+    background: #475953;
+    color: white;
+    min-width: 260px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 4s;
+}
+
+/* The animation code for shop now button */
+@keyframes example {
+    0%   {background-color: #475953;}
+    25%  {background-color: #A68660;}
+    50%  {background-color: #260A08;}
+    100% {background-color: #731803;}
+  }
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -65,16 +78,6 @@ h1, h2, h3, h4, h5 {
     background: #A68660;
     color: white;
 }
-
-
-.text-color {
-    color: #444444!important;
-}
-
-.border-color {
-    border: 1px solid  #475953 !important;
-}
-
 
 /* -------------------------------- Media Queries */
 
