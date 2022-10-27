@@ -1,0 +1,135 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "1928486837",
+        "name": "Crystal Heart Necklace",
+        "colour": "Gold",
+        "stock_level": "4",
+        "description": "The Heart-shaped pendant showcases an elegant design featuring crystals surrounding it. Get it for your loved one, or treat yourself to a classic timeless style. Look and feel great with this exquisite necklace.",
+        "price": 20.99,
+        "category": 1,
+        "rating": 4.6,
+        "image": "shutterstock_1928486837.jpg"
+      },
+      "product_specifications": {
+        "chain_width:": "1mm",
+        "chain_length": "45 cm"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "1914403591",
+        "name": "Double Heart Necklace",
+        "colour": "Silver",
+        "stock_level": "2",
+        "description": "Meet our Heart Necklace Collection - where we celebrate the beauty of simplicity. Double Heart Necklace. Made for everyone, it's a go-to because there's nothing it can't go with! Perfect addition to anyone's collection.",
+        "price": 15.99,
+        "category": 1,
+        "rating": 4.8,
+        "image": "shutterstock_1914403591.jpg"
+      },
+      "product_specifications": {
+        "chain_width:": "2mm",
+        "chain_length": "35-40 cm"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+        "sku": "1674185515",
+        "name": "Heart Necklace",
+        "colour": "Silver",
+        "stock_level": "2",
+        "description": "Heart-Shaped pendant designed in the finest solid stainless steel with 18K gold to ensure longevity. Perfect to layer with other necklaces for the Insta-worthy finish, or wear alone for simple and minimal elegance.",
+        "price": 10.99,
+        "category": 1,
+        "rating": 4.0,
+        "image": "shutterstock_1674185515.jpg"
+      },
+      "product_specifications": {
+        "chain_width:": "1mm",
+        "chain_length": "35-40 cm"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+        "sku": "1481733806",
+        "name": "Interlace Signature Chain",
+        "colour": "Gold",
+        "stock_level": "2",
+        "description": "Meet our Signature Collection - where we celebrate the beauty of simplicity.Made for everyone, it's a go-to because there's nothing it can't go with! Perfect stacking chain or addition to anyone's collection.",
+        "price": 13.99,
+        "category": 1,
+        "rating": 5.0,
+        "image": "shutterstock_1481733806.jpg"
+      },
+      "product_specifications": {
+        "chain_width:": "2mm",
+        "chain_length": "45 cm"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "1109134301",
+        "name": "Moon Necklace",
+        "colour": "Silver",
+        "stock_level": "6",
+        "description": "Light your path with this crescent moon necklace. Inspired by its luminous presence in the night sky, this stunning 18K gold plated moon necklace serves as a reminder that there is always light, even in the face of darkness.",
+        "price": 17.99,
+        "category": 1,
+        "rating": 4.5,
+        "image": "shutterstock_1109134301.jpg"
+      },
+      "product_specifications": {
+        "chain_width:": "2mm",
+        "chain_length": "48cm"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "700612261",
+        "name": "Infinity Necklace",
+        "colour": "Silver",
+        "stock_level": "3",
+        "description": "Light your path with this crescentinfinity necklace. Made for everyone, it's a go-to because there's nothing it can't go with! Perfect addition to anyone's collection.",
+        "price": 17.99,
+        "category": 1,
+        "rating": 4.8,
+        "image": "shutterstock_700612261.jpg"
+      },
+      "product_specifications": {
+        "chain_width:": "1mm",
+        "chain_length": "35-40 cm"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+        "sku": "77301892",
+        "name": "Double Heart Vertical Necklace",
+        "colour": "Silver",
+        "stock_level": "3",
+        "description": "Meet our Heart Necklace Collection - where we celebrate the beauty of simplicity. Double Heart Vertical Necklace. Made for everyone, it's a go-to because there's nothing it can't go with! Perfect addition to anyone's collection.",
+        "price": 25.99,
+        "category": 1,
+        "rating": 5.0,
+        "image": "shutterstock_77301892.jpg"
+      },
+      "product_specifications": {
+        "chain_width:": "1mm",
+        "chain_length": "35-40 cm"
+      }
+    }
+]    

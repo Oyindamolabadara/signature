@@ -1,0 +1,74 @@
+[
+    {
+       "pk":1,
+       "model":"products.category",
+       "fields":{
+          "name":"women_necklaces",
+          "friendly_name":"Women Necklaces"
+       }
+    },
+    {
+       "pk":2,
+       "model":"products.category",
+       "fields":{
+          "name":"women_rings",
+          "friendly_name":"Women Rings"
+       }
+    },
+    {
+      "pk":3,
+      "model":"products.category",
+      "fields":{
+         "name":"women_bracelets",
+         "friendly_name":"Women Bracelets"
+      }
+   },
+   {
+      "pk":4,
+      "model":"products.category",
+      "fields":{
+         "name":"women_watches",
+         "friendly_name":"Women Watches"
+      }
+   },
+   {
+      "pk":5,
+      "model":"products.category",
+      "fields":{
+         "name":"women_earrings",
+         "friendly_name":"Women Earrings"
+      }
+   },
+   {
+      "pk":6,
+      "model":"products.category",
+      "fields":{
+         "name":"women_anklets",
+         "friendly_name":"Women Anklets"
+      }
+   },
+    {
+       "pk":7,
+       "model":"products.category",
+       "fields":{
+          "name":"clearance",
+          "friendly_name":"Clearance"
+       }
+    },
+    {
+      "pk": 8,
+      "model": "products.category",
+      "fields": {
+        "name": "deals",
+        "friendly_name": "Deals"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.category",
+      "fields": {
+        "name": "new_arrivals",
+        "friendly_name": "New Arrivals"
+      }
+    }
+ ]
