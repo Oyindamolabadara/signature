@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5 {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
+/* pad the top a bit when navbar is collapsed on mobile 
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
@@ -127,3 +127,4 @@ h1, h2, h3, h4, h5 {
         height: calc(100vh - 116px);
     }
 }
+*/
