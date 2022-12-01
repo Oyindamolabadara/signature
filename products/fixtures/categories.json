@@ -70,5 +70,21 @@
         "name": "new_arrivals",
         "friendly_name": "New Arrivals"
       }
+    },
+    {
+      "pk": 10,
+      "model": "products.category",
+      "fields": {
+        "name": "personalised",
+        "friendly_name": "Personalised"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.category",
+      "fields": {
+        "name": "signature",
+        "friendly_name": "Signature"
+      }
     }
  ]
