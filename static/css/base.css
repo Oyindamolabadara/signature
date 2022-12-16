@@ -61,6 +61,18 @@ h1, h2, h3, h4, h5 {
     animation-delay: 4s;
 }
 
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
 /* The animation code for shop now button */
 @keyframes example {
     0%   {background-color: #475953;}
