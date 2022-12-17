@@ -34,9 +34,9 @@ h1, h2, h3, h4, h5 {
     width: fit-content;
 }
 
-.bg-black {
+/* .bg-black {
     background: #000 !important;
-}
+} */
 
 .text-color {
     color: #444444!important;
@@ -84,9 +84,9 @@ h1, h2, h3, h4, h5 {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.btn-color:hover,
+.btn-color:active,
+.btn-color:focus {
     background: #A68660;
     color: white;
 }
