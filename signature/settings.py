@@ -26,8 +26,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '8kzg!0xl4o^72bbde_zy_nl89d-jd1$=-qqlp$$$%zh%ht0oiv')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
-# DEBUG = True
+# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ['signature.herokuapp.com', 'localhost']
 
@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'blog',
 
     # Other
+    'django_summernote',
     'crispy_forms',
     'storages',
 ]
