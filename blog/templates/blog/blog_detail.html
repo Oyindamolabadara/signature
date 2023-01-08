@@ -1,5 +1,5 @@
 {% extends 'base.html' %} 
-<!-- {% load crispy_forms_tags %} -->
+{% load crispy_forms_tags %}
 {% load static %}
 
 {% block extra_css %}
@@ -56,7 +56,7 @@
         <p class="post-subtitle">Written By: {{ post.author }} | {{ post.created_on }}</p>
     </div>
     <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
+        <div class="col-md-8 card mb-4 mt-3">
             <div class="card-body">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
@@ -80,15 +80,42 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
         <div class="col">
             <hr>
         </div>
-    </div>
+    </div> -->
+    
     <div class="row">
-        <div class="col-md-8 card mb-4  mt-3 ">
+        <div class="col-md-8 card mb-4 mt-3">
+            <div class="card-body">
+                <!-- For later -->
+                {% if commented %}
+                <div class="alert alert-success" role="alert">
+                    Your comment is awaiting approval
+                </div>
+                {% else %}
+                {% if user.is_authenticated %}
+    
+                <h3>Leave a comment: <i class="fas fa-comments ps-1 blueicon"></i></h3>
+                <p>Posting as: {{ user.username }}</p>
+                <form method="post" style="margin-top: 1.3em;">
+                    {{ comment_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-color btn-lg">Submit For Approval</button>
+                </form>
+                {% else %}
+                <h3>Please <a href="{% url 'account_login' %}">login</a> or <a href="{% url 'account_signup' %}">register</a> to leave a comment.</h3>
+                {% endif %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-md-8 card mb-4 mt-3">
             <h3>Comments:</h3>
             <div class="card-body">
+                {% if not post.comments.all %}
+                 <p class=" text-muted">No comment yet. Add one above...</p> 
+                {% else %}
                 <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
                 {% for comment in comments %}
                 <div class="comments" style="padding: 10px;">
@@ -105,11 +132,7 @@
                 </div>
                 <!-- Our for loop ends here -->
                 {% endfor %}
-            </div>
-        </div>
-        <div class="col-md-4 card mb-4  mt-3 ">
-            <div class="card-body">
-                <!-- For later -->
+                {% endif %}
             </div>
         </div>
     </div>
