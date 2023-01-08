@@ -119,6 +119,14 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
+SUMMERNOTE_CONFIG = {
+    'iframe': False,
+    'summernote': {
+        'width': '100%',
+        'height': '480',
+    }
+}
+
 WSGI_APPLICATION = 'signature.wsgi.application'
 
 
