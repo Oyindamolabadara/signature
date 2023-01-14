@@ -4,8 +4,9 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
-from .forms import ProductForm
+from profiles.models import UserProfile
+from .models import Product, Category, Review
+from .forms import ProductForm, ReviewForm
 
 # Create your views here.
 
@@ -63,12 +64,29 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = product.reviews.filter(product=product)
 
-    context = {
-        'product': product,
-    }
+    review_form = ReviewForm(data=request.POST)
 
-    return render(request, 'products/product_detail.html', context)
+    if review_form.is_valid():
+        review = review_form.save(commit=False)
+        review.product = product
+        review.save()
+    else:
+        review_form = ReviewForm()
+
+    # context = {
+    #     'product': product,
+    # }
+
+    # return render(request, 'products/product_detail.html', context)
+
+    return render(request, 'products/product_detail.html',
+                  {'product': product,
+                   'reviews': reviews,
+                   'review_form': ReviewForm(),
+                   })
+
 
 
 @login_required
@@ -137,3 +155,83 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def add_review(request, product_id):
+    """
+    Add a product review
+    """
+    product = get_object_or_404(Product, pk=product_id)
+    user = get_object_or_404(UserProfile, user=request.user)
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            star_rating = request.POST.get('star_rating', 3)
+            description = form.cleaned_data['description']
+            Review.objects.create(user=user,
+                                  product=get_object_or_404
+                                  (Product, pk=product_id),
+                                  description=description,
+                                  star_rating=star_rating)
+            messages.success(request, 'Your review has been \
+                successfully added.')
+            return redirect(reverse('product_detail', args=[product_id]))
+        else:
+            messages.error(request, 'There is an error. Please try again.')
+    else:
+        form = ReviewForm()
+    template = 'reviews/add_review.html'
+    context = {
+        'form': form,
+        'product': product,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def edit_review(request, review_id):
+    """
+    Edit a product review
+    """
+    review = get_object_or_404(Review, pk=review_id)
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, instance=review)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your review has been \
+            successfully edited.')
+            return redirect(
+                reverse('product_detail', args=(review.product.id,)))
+        else:
+            messages.error(request, 'Please try again.')
+    else:
+        form = ReviewForm(instance=review)
+
+    template = "reviews/edit_review.html"
+    context = {
+        "form": form,
+        "review": review,
+        "product": review.product,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def delete_review(request, review_id):
+    """
+    Delete a product review
+    """
+    review = get_object_or_404(Review, pk=review_id)
+
+    if request.user == review.user or request.user.is_superuser:
+        review.delete()
+        messages.info(request, "Review deleted!")
+        return redirect(reverse("product_detail", args=[review.product.id]))
+    else:
+        messages.error(
+            request,
+            "Only store owner and the reviewer can do that.")
+        return redirect(reverse("product_detail", args=[review.product.id]))

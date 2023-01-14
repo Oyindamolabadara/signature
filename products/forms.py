@@ -1,6 +1,7 @@
 from django import forms
 from .widgets import CustomClearableFileInput
-from .models import Product, Category
+from .models import Product, Category, Review
+from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 
 
 class ProductForm(forms.ModelForm):
@@ -19,3 +20,14 @@ class ProductForm(forms.ModelForm):
         self.fields['category'].choices = friendly_names
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-color rounded'
+
+
+class ReviewForm(forms.ModelForm):
+    """ Form for users to add reviews of products"""
+    class Meta:
+        model = Review
+        fields = ('description', 'star_rating')
+        widgets = {
+            'description': SummernoteWidget,
+            'star_rating': forms.NumberInput(attrs={'min': 1, 'max': '5', })
+        }

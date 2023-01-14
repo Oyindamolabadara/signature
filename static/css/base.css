@@ -349,3 +349,70 @@ pad the top a bit when navbar is collapsed on mobile
         padding: .25rem .5rem !important;
     }
 }
+
+
+/* Reviews */
+
+/* .review-heading {
+    margin-top: 20px;
+    margin-bottom: 28px;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.review-heading::after {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 70px;
+    background: #ff0051;
+    content: "";
+} */
+
+.card-row-review{
+    margin-top: 40px;
+}
+
+.card-body-review,
+.card-footer-review {
+    position: relative;
+    font-size: 1.1rem;
+    border: 1px solid #475953;
+}
+    
+.blockquote-custom-icon {
+    margin-top: 25px;
+    margin-bottom: 2px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -40px;
+    left: 19px;
+}
+
+.quote-square {
+    background-color: #A68660;
+}
+
+.card-text {
+    padding-top: 10px;
+}
+
+.edit-buttons a {
+    font-size: 80%;
+}
+
+.review-star-rating {
+    /* background: #000000; */
+    color:  #FFD700;
+    font-weight: bold;
+}

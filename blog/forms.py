@@ -13,4 +13,3 @@ class CommentForm(forms.ModelForm):
         widgets = {
             'body': SummernoteWidget
         }
-

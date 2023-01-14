@@ -1,4 +1,8 @@
 from django.db import models
+from django.core.validators import MaxValueValidator, MinValueValidator
+from django.contrib.auth.models import User
+
+from profiles.models import UserProfile
 
 
 class Category(models.Model):
@@ -33,3 +37,29 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    def is_featured(self):
+        return self.featured
+
+    def get_rating(self):
+        total = (sum(int(review['star_rating']) for review
+                 in self.reviews.values()))
+
+class Review(models.Model):
+    """
+    The review model class, with fields for
+    user and products using a foreign key (unique value)
+    A prod_description and review_time
+    """
+
+    user = models.ForeignKey(UserProfile, related_name='reviews',
+                             on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, related_name='reviews',
+                                on_delete=models.CASCADE)
+    description = models.TextField(max_length=450, null=False,
+                                   blank=False)
+    star_rating = models.IntegerField(validators=[
+            MaxValueValidator(5),
+            MinValueValidator(1)
+        ])
+    review_time = models.DateTimeField(auto_now_add=True)
