@@ -416,3 +416,51 @@ pad the top a bit when navbar is collapsed on mobile
     color:  #FFD700;
     font-weight: bold;
 }
+
+/* ------------------------------------ Footer */
+footer {
+    background-color: #FFFFFF;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.footer {
+    margin-top: 60px;
+}
+
+.footer-links {
+    color: #A68660;
+    cursor: pointer;
+}
+
+.footer-links:hover {
+    color: #731803;
+}
+
+.copyright{
+    float: left;
+    width: 95%;
+    padding: 5px;
+}
+
+.copyright p {
+    display: inline-block;
+    margin: 0;
+}
+
+÷
+.footer-div {
+    padding: 5px;
+}
+
+.footer-header {
+    padding: 8px;
+}
+
+#mc_embed_signup {
+    clear: left;
+}
+
+/* .contact-form {
+    margin: 0 auto;
+} */
