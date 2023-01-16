@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+<!-- {% block extra_title %} - Contact Us{% endblock %} -->
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+        </div>
+    </div>
+</div>
+
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Blog</h2>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+</div>
+
+    <div class="row">
+        <div class="col-md-10 contact-form">
+            <form method="POST">
+                <!-- Contact Form -->
+                {% csrf_token %}
+                    <h3 class="welcome"> Contact Us!</h3>
+                    <div class="form-section autofill" id="contact-us">
+                        <form method="post" action="https://formspree.io/f/mzbqzzqd" class="signup-form">
+                            <label for="fname">First Name</label>
+                            <input id="fname" name="first_name" type="text" required placeholder="Your name..">
+        
+                            <label for="lname">Last Name</label>
+                            <input id="lname" name="last_name" type="text" required placeholder="Your name..">
+        
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email_address" required placeholder="Your email address..">
+                            <br>
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Your message.."
+                                style="height:200px"></textarea>
+        
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

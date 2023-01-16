@@ -464,3 +464,36 @@ footer {
 /* .contact-form {
     margin: 0 auto;
 } */
+
+/* Form */
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #0d0000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button{
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #f2dea0;
+  border-radius: 4px;
+  padding: 9px;
+}
+
+.form-section {
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #f2cb9b;
+  padding: 20px;
+}
