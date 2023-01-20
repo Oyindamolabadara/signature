@@ -12,10 +12,6 @@
         "category": 1,
         "rating": 5.0,
         "image": "double_heart_vertical_necklace.jpg"
-      },
-      "product_specifications": {
-        "chain_width:": "1mm",
-        "chain_length": "35-40 cm"
       }
     },
     {
@@ -31,10 +27,6 @@
         "category": 1,
         "rating": 4.8,
         "image": "infinity_necklace.jpg"
-      },
-      "product_specifications": {
-        "chain_width:": "1mm",
-        "chain_length": "35-40 cm"
       }
     },
     {
@@ -45,15 +37,11 @@
         "name": "Interlace Signature Chain",
         "colour": "Gold",
         "stock_level": "2",
-        "description": "Meet our Signature Collection - where we celebrate the beauty of simplicity.Made for everyone, it's a go-to because there's nothing it can't go with! Perfect stacking chain or addition to anyone's collection.",
+        "description": "Meet our Signature Collection - where we celebrate the beauty of simplicity. Made for everyone, it's a go-to because there's nothing it can't go with! Perfect stacking chain or addition to anyone's collection.",
         "price": 13.99,
         "category": 1,
         "rating": 5.0,
         "image": "interlace_signature_chain.jpg"
-      },
-      "product_specifications": {
-        "chain_width:": "2mm",
-        "chain_length": "45 cm"
       }
     },
     {
@@ -64,15 +52,176 @@
         "name": "Moon Necklace",
         "colour": "Silver",
         "stock_level": "6",
-        "description": "Light your path with this crescent moon necklace. Inspired by its luminous presence in the night sky, this stunning 18K gold plated moon necklace serves as a reminder that there is always light, even in the face of darkness.",
+        "description": "Light your path with this crescent moon necklace. Inspired by its luminous presence in the night sky, this stunning gold plated moon necklace serves as a reminder that there is always light, even in the face of darkness.",
         "price": 17.99,
         "category": 1,
         "rating": 4.5,
         "image": "moon_necklace.jpg"
-      },
-      "product_specifications": {
-        "chain_width:": "2mm",
-        "chain_length": "48cm"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "1005",
+        "name": "Silver Ring with Red Gem",
+        "colour": "Silver",
+        "stock_level": "6",
+        "description": "Elevate your hand jewelry with this Silver Ring with Red Gem - it's the ideal go-to piece because there's nothing it can't go with! Perfect, yet simple ring that makes a great addition to anyone's collection.",
+        "price": 19.99,
+        "category": 2,
+        "rating": 5.0,
+        "image": "silver_ring_with_red_gem.jpeg"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "1006",
+        "name": "Twin Diamond Ring",
+        "colour": "Diamond",
+        "stock_level": "4",
+        "description": "An intense light is the lure of this collection, vividly refracting on the delicate diamond band as if sunlight on one of nature’s dramatic Waterfalls.",
+        "price": 19.99,
+        "category": 2,
+        "rating": 5.0,
+        "image": "twin_diamond_ring.jpeg"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+        "sku": "1007",
+        "name": "Adore - Heart Ring",
+        "colour": "Gold",
+        "stock_level": "5",
+        "description": "This ring is the perfect addition to your collection and a great way to show your adoration for a loved one (or yourself!).",
+        "price": 16.99,
+        "category": 2,
+        "rating": 4.5,
+        "image": "adore_heart_ring.jpeg"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+        "sku": "1008",
+        "name": "Adore - Heart Ring Mini",
+        "colour": "Gold",
+        "stock_level": "5",
+        "description": "This ring is the perfect addition to your collection and a great way to show your adoration for a loved one (or yourself!).",
+        "price": 12.99,
+        "category": 2,
+        "rating": 4.8,
+        "image": "adore_heart_ring_mini.jpeg"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+        "sku": "1009",
+        "name": "Silver Cuff",
+        "colour": "Silver",
+        "stock_level": "3",
+        "description": "Made for everyone, it's a go-to because there's nothing it can't go with! This Silver Cuff is the perfect starter cuff or addition to anyone's collection.",
+        "price": 9.99,
+        "category": 3,
+        "rating": 4.5,
+        "image": "silver_cuff.jpeg"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+        "sku": "1010",
+        "name": "Diamond Studs",
+        "colour": "Diamond",
+        "stock_level": "8",
+        "description": "Light your path with these Diamond Studs. Made for everyone, it's a go-to because there's nothing it can't go with! Perfect addition to anyone's collection.",
+        "price": 12.99,
+        "category": 5,
+        "rating": 4.5,
+        "image": "diamond_studs.jpg"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+        "sku": "1011",
+        "name": "Signature Earring",
+        "colour": "Gold",
+        "stock_level": "10",
+        "description": "Meet our Signature Collection - where we celebrate the beauty of simplicity. Made for everyone, it's a go-to because there's nothing it can't go with! Perfect stacking chain or addition to anyone's collection.",
+        "price": 8.99,
+        "category": 5,
+        "rating": 5.0,
+        "image": "signature_earring.jpg"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+        "sku": "1012",
+        "name": "Silver Earring - Blue Gem",
+        "colour": "Silver",
+        "stock_level": "3",
+        "description": "There is nothing like a gorgeous pair of earrings to finish off your look! This piece is a go-to.",
+        "price": 10.99,
+        "category": 5,
+        "rating": 4.5,
+        "image": "silver_earring_blue_gem.jpg"
+      }
+    },
+    {
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+        "sku": "1015",
+        "name": "Signature Watch",
+        "colour": "Gold",
+        "stock_level": "8",
+        "description": "A stylish, yet simple watch that will compliment any outfit. Minimalist style appearance, unique and eye-catching.",
+        "price": 15.99,
+        "category": 4,
+        "rating": 4.5,
+        "image": "signature_watch.jpeg"
+      }
+    },
+    {
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+        "sku": "1016",
+        "name": "Adore Wristwatch",
+        "colour": "Gold",
+        "stock_level": "5",
+        "description": "A stylish, yet simple watch that will compliment any outfit. Minimalist style appearance, unique and eye-catching.",
+        "price": 19.99,
+        "category": 4,
+        "rating": 5.0,
+        "image": "adore_wristwatch.jpeg"
+      }
+    },
+    {
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+        "sku": "1017",
+        "name": "Adore Me Bracelet",
+        "colour": "Silver",
+        "stock_level": "5",
+        "description": "This bracelet will quickly become your go-to accessory for that minimalistic look - day or night! Light your path with this Adore Me Bracelet.",
+        "price": 17.99,
+        "category": 3,
+        "rating": 4.5,
+        "image": "adore_me_bracelet.jpg"
       }
     }
 ]    

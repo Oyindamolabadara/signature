@@ -467,7 +467,7 @@ footer {
 
 /* Form */
 
-input,
+/* input,
 select,
 textarea {
   width: 100%;
@@ -478,22 +478,22 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-}
+} */
 
-button{
+/* button{
   font-size: 20px;
-}
+} */
 
-button:hover {
+/* button:hover {
   background-color: #f2dea0;
   border-radius: 4px;
   padding: 9px;
-}
+} */
 
-.form-section {
+/* .form-section {
   width: 50%;
   margin: auto;
   border-radius: 5px;
   background-color: #f2cb9b;
   padding: 20px;
-}
+} */
