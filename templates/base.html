@@ -167,20 +167,20 @@
               <!-- Help Section -->
               <h6 class="text-uppercase"><strong>Help</strong></h6>
               <div>
-                <a href="" class="footer-links">FAQ's</a>
+                <a href="{% url 'faq' %}" class="links">FAQ's</a>
               </div>
               <div>
-                <a href="" class="footer-links">Shipping and Returns</a>
+                <a href="{% url 'shipping_returns' %}" class="links">Shipping and Returns</a>
               </div>
             </div>
             <div class="footer-header">
               <!-- Company Section -->
               <h6 class="text-uppercase">Company</h6>
               <div>
-                <a href="" class="footer-links">About Us</a>
+                <a href="{% url 'about_us' %}" class="links">About Us</a>
               </div>
               <div>
-                <a href="" class="footer-links">Privacy
+                <a href="{% url 'privacy_policy' %}" class="links">Privacy
                   Policy</a>
               </div>
             </div>
@@ -226,11 +226,11 @@
               <!-- Contact Us Section -->
               <h6 class="text-uppercase"><strong>Contact Us</strong></h6>
               <div>
-                <a href="{% url 'contact' %}" class="footer-links">Get in Touch</a>
+                <a href="{% url 'contact' %}" class="links">Get in Touch</a>
               </div>
             </div>
             <h6 class="text-uppercase">Follow Us</h6>
-            <a class="text-color" href="" aria-label="Go to our Facebook page (opens in new tab)" rel="noopener"
+            <a class="text-color" href="https://www.facebook.com/" aria-label="Go to our Facebook page (opens in new tab)" rel="noopener"
               target="_blank">
               <i class="fab fa-facebook"></i>
             </a>

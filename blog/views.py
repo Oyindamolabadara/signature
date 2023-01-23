@@ -51,7 +51,8 @@ class BlogDetail(View):
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
-            messages.success(request, 'Thanks for your comment. Your comment is awaiting approval.!')
+            messages.success(request, 'Thanks for your comment. Your comment \
+                is awaiting approval!')
         else:
             comment_form = CommentForm()
         return render(

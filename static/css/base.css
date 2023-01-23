@@ -428,12 +428,12 @@ footer {
     margin-top: 60px;
 }
 
-.footer-links {
+.links {
     color: #A68660;
     cursor: pointer;
 }
 
-.footer-links:hover {
+.links:hover {
     color: #731803;
 }
 

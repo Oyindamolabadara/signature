@@ -28,7 +28,7 @@
                         <div class="blockquote-custom-icon quote-square shadow-1-strong">
                             <i class="fa fa-quote-left text-white"></i>
                         </div>
-                        <div class="card-text mt-2">{{ review.description | linebreaks }}</div>
+                        <div class="card-text mt-2">{{ review.description | safe | linebreaks }}</div>
                     </div>
                     <div class="card-footer card-footer-review">
                         <div><small>Review on
@@ -72,5 +72,5 @@
         </div>
     </div>
 </div>
-    {% endif %}
-    {% endblock %}
+{% endif %}
+{% endblock %}
