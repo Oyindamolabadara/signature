@@ -9,12 +9,12 @@ STATUS = ((0, "Draft"), (1, "Published"))
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
-    category = models.CharField(max_length=150)
+    # category = models.CharField(max_length=150)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"
     )
     featured_image = models.ImageField(default='placeholder')
-    excerpt = models.TextField(blank=True)
+    # excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)

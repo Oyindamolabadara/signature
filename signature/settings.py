@@ -31,6 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['signature.herokuapp.com', 'localhost']
 
+X_FRAME_OPTIONS = "SAMEORIGIN"
 
 # Application definition
 

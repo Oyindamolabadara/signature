@@ -70,16 +70,10 @@ def product_detail(request, product_id):
 
     if review_form.is_valid():
         review = review_form.save(commit=False)
-        review.product = product
+        review.product = product()
         review.save()
     else:
         review_form = ReviewForm()
-
-    # context = {
-    #     'product': product,
-    # }
-
-    # return render(request, 'products/product_detail.html', context)
 
     return render(request, 'products/product_detail.html',
                   {'product': product,
@@ -113,7 +107,6 @@ def add_product(request):
     }
 
     return render(request, template, context)
-
 
 @login_required
 def edit_product(request, product_id):
