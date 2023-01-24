@@ -18,15 +18,15 @@
       "pk": 2,
       "model": "products.product",
       "fields": {
-        "sku": "10002",
-        "name": "Infinity Necklace",
-        "colour": "Silver",
+        "sku": "1002",
+        "name": "Adore - Heart Ring Mini",
+        "colour": "Gold",
         "stock_level": "5",
-        "description": "Light your path with this crescent infinity necklace. Made for everyone, it's a go-to because there's nothing it can't go with! Perfect addition to anyone's collection.",
-        "price": 17.99,
-        "category": 1,
+        "description": "This ring is the perfect addition to your collection and a great way to show your adoration for a loved one (or yourself!).",
+        "price": 12.99,
+        "category": 2,
         "rating": 4.8,
-        "image": "infinity_necklace.jpg"
+        "image": "adore_heart_ring_mini.jpeg"
       }
     },
     {
@@ -48,15 +48,15 @@
       "pk": 4,
       "model": "products.product",
       "fields": {
-        "sku": "1004",
-        "name": "Moon Necklace",
+        "sku": "10004",
+        "name": "Infinity Necklace",
         "colour": "Silver",
-        "stock_level": "6",
-        "description": "Light your path with this crescent moon necklace. Inspired by its luminous presence in the night sky, this stunning gold plated moon necklace serves as a reminder that there is always light, even in the face of darkness.",
+        "stock_level": "5",
+        "description": "Light your path with this crescent infinity necklace. Made for everyone, it's a go-to because there's nothing it can't go with! Perfect addition to anyone's collection.",
         "price": 17.99,
         "category": 1,
-        "rating": 4.5,
-        "image": "moon_necklace.jpg"
+        "rating": 4.8,
+        "image": "infinity_necklace.jpg"
       }
     },
     {
@@ -64,6 +64,21 @@
       "model": "products.product",
       "fields": {
         "sku": "1005",
+        "name": "Adore Wristwatch",
+        "colour": "Gold",
+        "stock_level": "5",
+        "description": "A stylish, yet simple watch that will compliment any outfit. Minimalist style appearance, unique and eye-catching.",
+        "price": 19.99,
+        "category": 4,
+        "rating": 5.0,
+        "image": "adore_wristwatch.jpeg"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "1006",
         "name": "Silver Ring with Red Gem",
         "colour": "Silver",
         "stock_level": "6",
@@ -75,10 +90,10 @@
       }
     },
     {
-      "pk": 6,
+      "pk": 7,
       "model": "products.product",
       "fields": {
-        "sku": "1006",
+        "sku": "1007",
         "name": "Twin Diamond Ring",
         "colour": "Diamond",
         "stock_level": "4",
@@ -90,40 +105,10 @@
       }
     },
     {
-      "pk": 7,
-      "model": "products.product",
-      "fields": {
-        "sku": "1007",
-        "name": "Adore - Heart Ring",
-        "colour": "Gold",
-        "stock_level": "5",
-        "description": "This ring is the perfect addition to your collection and a great way to show your adoration for a loved one (or yourself!).",
-        "price": 16.99,
-        "category": 2,
-        "rating": 4.5,
-        "image": "adore_heart_ring.jpeg"
-      }
-    },
-    {
       "pk": 8,
       "model": "products.product",
       "fields": {
         "sku": "1008",
-        "name": "Adore - Heart Ring Mini",
-        "colour": "Gold",
-        "stock_level": "5",
-        "description": "This ring is the perfect addition to your collection and a great way to show your adoration for a loved one (or yourself!).",
-        "price": 12.99,
-        "category": 2,
-        "rating": 4.8,
-        "image": "adore_heart_ring_mini.jpeg"
-      }
-    },
-    {
-      "pk": 9,
-      "model": "products.product",
-      "fields": {
-        "sku": "1009",
         "name": "Silver Cuff",
         "colour": "Silver",
         "stock_level": "3",
@@ -132,6 +117,21 @@
         "category": 3,
         "rating": 4.5,
         "image": "silver_cuff.jpeg"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+        "sku": "1009",
+        "name": "Signature Watch",
+        "colour": "Gold",
+        "stock_level": "8",
+        "description": "A stylish, yet simple watch that will compliment any outfit. Minimalist style appearance, unique and eye-catching.",
+        "price": 15.99,
+        "category": 4,
+        "rating": 4.5,
+        "image": "signature_watch.jpeg"
       }
     },
     {
@@ -154,6 +154,21 @@
       "model": "products.product",
       "fields": {
         "sku": "1011",
+        "name": "Moon Necklace",
+        "colour": "Silver",
+        "stock_level": "6",
+        "description": "Light your path with this crescent moon necklace. Inspired by its luminous presence in the night sky, this stunning gold plated moon necklace serves as a reminder that there is always light, even in the face of darkness.",
+        "price": 17.99,
+        "category": 1,
+        "rating": 4.5,
+        "image": "moon_necklace.jpg"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+        "sku": "1012",
         "name": "Signature Earring",
         "colour": "Gold",
         "stock_level": "10",
@@ -165,10 +180,25 @@
       }
     },
     {
-      "pk": 12,
+      "pk": 13,
       "model": "products.product",
       "fields": {
-        "sku": "1012",
+        "sku": "1013",
+        "name": "Adore - Heart Ring",
+        "colour": "Gold",
+        "stock_level": "5",
+        "description": "This ring is the perfect addition to your collection and a great way to show your adoration for a loved one (or yourself!).",
+        "price": 16.99,
+        "category": 2,
+        "rating": 4.5,
+        "image": "adore_heart_ring.jpeg"
+      }
+    },
+    {
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+        "sku": "1014",
         "name": "Silver Earring - Blue Gem",
         "colour": "Silver",
         "stock_level": "3",
@@ -184,36 +214,6 @@
       "model": "products.product",
       "fields": {
         "sku": "1015",
-        "name": "Signature Watch",
-        "colour": "Gold",
-        "stock_level": "8",
-        "description": "A stylish, yet simple watch that will compliment any outfit. Minimalist style appearance, unique and eye-catching.",
-        "price": 15.99,
-        "category": 4,
-        "rating": 4.5,
-        "image": "signature_watch.jpeg"
-      }
-    },
-    {
-      "pk": 16,
-      "model": "products.product",
-      "fields": {
-        "sku": "1016",
-        "name": "Adore Wristwatch",
-        "colour": "Gold",
-        "stock_level": "5",
-        "description": "A stylish, yet simple watch that will compliment any outfit. Minimalist style appearance, unique and eye-catching.",
-        "price": 19.99,
-        "category": 4,
-        "rating": 5.0,
-        "image": "adore_wristwatch.jpeg"
-      }
-    },
-    {
-      "pk": 17,
-      "model": "products.product",
-      "fields": {
-        "sku": "1017",
         "name": "Adore Me Bracelet",
         "colour": "Silver",
         "stock_level": "5",
