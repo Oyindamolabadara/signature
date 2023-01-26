@@ -11,7 +11,7 @@
         "price": 25.99,
         "category": 1,
         "rating": 5.0,
-        "image": "double_heart_vertical_necklace.jpg"
+        "image": "double_heart_vertical_necklace.jpeg"
       }
     },
     {
@@ -41,7 +41,7 @@
         "price": 13.99,
         "category": 1,
         "rating": 5.0,
-        "image": "interlace_signature_chain.jpg"
+        "image": "interlace_signature_chain.jpeg"
       }
     },
     {
@@ -56,7 +56,7 @@
         "price": 17.99,
         "category": 1,
         "rating": 4.8,
-        "image": "infinity_necklace.jpg"
+        "image": "infinity_necklace.jpeg"
       }
     },
     {
@@ -146,7 +146,7 @@
         "price": 12.99,
         "category": 5,
         "rating": 4.5,
-        "image": "diamond_studs.jpg"
+        "image": "diamond_studs.jpeg"
       }
     },
     {
@@ -161,7 +161,7 @@
         "price": 17.99,
         "category": 1,
         "rating": 4.5,
-        "image": "moon_necklace.jpg"
+        "image": "moon_necklace.jpeg"
       }
     },
     {
@@ -176,7 +176,7 @@
         "price": 8.99,
         "category": 5,
         "rating": 5.0,
-        "image": "signature_earring.jpg"
+        "image": "signature_earring.jpeg"
       }
     },
     {
@@ -206,7 +206,7 @@
         "price": 10.99,
         "category": 5,
         "rating": 4.5,
-        "image": "silver_earring_blue_gem.jpg"
+        "image": "silver_earring_blue_gem.jpeg"
       }
     },
     {
@@ -221,7 +221,7 @@
         "price": 17.99,
         "category": 3,
         "rating": 4.5,
-        "image": "adore_me_bracelet.jpg"
+        "image": "adore_me_bracelet.jpeg"
       }
     }
 ]    

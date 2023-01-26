@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background: url('/media/jewelry-background.jpg') no-repeat center center fixed;
+    background: url('/media/jewelry-background.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
