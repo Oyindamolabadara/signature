@@ -124,7 +124,7 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
 SUMMERNOTE_CONFIG = {
-    'iframe': False,
+    'iframe': True,
     'summernote': {
         'width': '100%',
         'height': '480',

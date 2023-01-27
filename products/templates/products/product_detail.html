@@ -8,8 +8,8 @@
     </div>
 {% endblock %}
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container-fluid">
+    <!-- <div class="overlay"></div> -->
+    <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
@@ -100,13 +100,14 @@
                 </div>
             </div>
         </div>
-    </div>
-{% endblock %}
-
-{% block page_footer %}
+        
+    </div>     
+</div>
 <!-- Includes -->
 {% include 'reviews/includes/reviews.html' %}
 {% endblock %}
+
+
 
 {% block postloadjs %}
 {{ block.super }}
