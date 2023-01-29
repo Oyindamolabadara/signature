@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://signature.herokuapp.com/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/bag/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/?category=women_necklaces</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/?category=women_rings</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/?category=women_bracelets</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/?category=women_watches</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/?category=women_earrings</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/?category=women_necklaces,women_rings,women_bracelets,women_watches,women_earrings</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/blog/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/info/faq/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/info/shipping_returns/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/info/about_us/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/info/privacy_policy/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/info/contact_us/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/12/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/8/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/14/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/2/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/10/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/3/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/9/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/13/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/15/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/4/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/11/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/7/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/6/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/5/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/products/1/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/blog/how-to-care-for-your-new-jewellery-10-top-tips/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://signature.herokuapp.com/blog/how-to-clean-engagement-rings-care-for-them/</loc>
+  <lastmod>2023-01-29T21:48:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
