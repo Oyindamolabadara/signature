@@ -14,6 +14,7 @@ class CommentForm(forms.ModelForm):
             'body': SummernoteWidget
         }
 
+
 class PostForm(forms.ModelForm):
     """
     Form class to add a comment

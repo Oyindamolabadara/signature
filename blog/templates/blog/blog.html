@@ -4,13 +4,9 @@
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
-<!-- Font Awesome -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 {% endblock %}
 
-<!-- {% block extra_title %} - Blog {% endblock %} -->
+{% block extra_title %} - Blog {% endblock %}
 
 {% block page_header %}
 <div class="container header-container">
@@ -19,7 +15,6 @@
     </div>
 </div>
 {% endblock %}
-
 
 {% block content %}
 
@@ -45,8 +40,7 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top"
-                                    src="{{ MEDIA_URL }}blog_image.jpeg" width="100%">
+                                <img class="card-img-top" src="{{ MEDIA_URL }}blog_image.jpeg" width="100%">
                                 {% else %}
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}" width="100%">
                                 {% endif %}
@@ -74,14 +68,14 @@
         </div>
     </div>
 
-<!--Page Navigation -->
-{% if is_paginated %}
-{% if page_obj.has_previous %}
-<a class="btn btn-outline-info mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
-{% endif %}
-{% if page_obj.has_next %}
-<a class="btn btn-outline-info mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
-{% endif %}
-{% endif %}
+    <!--Page Navigation -->
+    {% if is_paginated %}
+    {% if page_obj.has_previous %}
+    <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+    {% endif %}
+    {% if page_obj.has_next %}
+    <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
+    {% endif %}
+    {% endif %}
 
-{% endblock content %}
+    {% endblock content %}

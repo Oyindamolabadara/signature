@@ -12,18 +12,19 @@
 
   <!-- Meta tags for improved SEO using search keywords and descriptions -->
   <meta name="description"
-  content="Signature offers quality jewellery at an amazing price. From gifts for loved ones to treats for yourself, there's something for every occasion">
-    <meta name="keywords"
-    content="The Best Places To Find Jewellery In England, Engagement Rings England, Gold Necklace, Gold Earrings, Silver Necklace, Silver Earrings, Jewellery Gifts, Quality Jewellery">
+    content="Signature offers quality jewellery at an amazing price. From gifts for loved ones to treats for yourself, there's something for every occasion">
+  <meta name="keywords"
+    content="The Best Places To Find Jewellery, Engagement Rings England, Gold Necklace, Gold Earrings, Silver Necklace, Silver Earrings, Jewellery Gifts, Quality Jewellery, Gifts for Her, Gifts for Women">
   {% endblock %}
 
   {% block extra_meta %}
   {% endblock %}
 
   {% block corecss %}
+  <!-- Bootstrap 4 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+  <!-- CSS Link -->
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
   {% endblock %}
 
@@ -31,6 +32,7 @@
   {% endblock %}
 
   {% block corejs %}
+  <!-- Font Awesome, jQuery minifield, Popper.js and Bootstrap JS-->
   <script src="https://kit.fontawesome.com/1057ad4791.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -51,20 +53,17 @@
 </head>
 
 <body>
+  <!-- Template inspired by Code Institute Boutique Ado walkthrough project -->
+  <!-- Header content -->
   <header class="container-fluid fixed-top">
-
-    <!-- <div id="delivery-banner" class="row text-center">
-        <div class="col btn-color">
-            <h4 class="logo-font my-1">Free delivery above ${{ free_delivery_threshold }}!</h4>                
-      </div>  -->
-
-    </div>
     <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+        <!-- Main logo -->
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
           <h2 class="logo-font text-color my-0 font-weight-bold">Signature</h2>
         </a>
       </div>
+      <!--Products Search form -->
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <form action="{% url 'products' %}" method="GET">
           <div class="input-group w-100">
@@ -80,6 +79,7 @@
           </div>
         </form>
       </div>
+      <!-- Account Navigation and Shopping Bag with Grand Total -->
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right my-0">
           <li class="list-inline-item dropdown">
@@ -121,6 +121,7 @@
         </ul>
       </div>
     </div>
+    <!-- Navigation headers -->
     <div class="row bg-white">
       <nav class="navbar navbar-expand-lg navbar-light w-100">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
@@ -132,7 +133,7 @@
       </nav>
     </div>
   </header>
-
+  <!-- Toast Messages -->
   {% if messages %}
   <div class="message-container">
     {% for message in messages %}
@@ -191,7 +192,6 @@
             <p>Subscribe to the Signature mailing list to get exclusive offers straight to
               your inbox!</p>
             <!-- Mailchimp Signup Form -->
-
             <div id="mc_embed_signup">
               <form
                 action="https://heroku.us9.list-manage.com/subscribe/post?u=655e0aeb5496a233c94febf9b&amp;id=afdde7074e&amp;f_id=00a32be1f0"
@@ -218,7 +218,6 @@
                 </div>
               </form>
             </div>
-
             <!--End mc_embed_signup-->
           </div>
           <div class="col-md-4 text-center">
@@ -230,8 +229,8 @@
               </div>
             </div>
             <h6 class="text-uppercase">Follow Us</h6>
-            <a class="text-color" href="https://www.facebook.com/" aria-label="Go to our Facebook page (opens in new tab)" rel="noopener"
-              target="_blank">
+            <a class="text-color" href="https://www.facebook.com/"
+              aria-label="Go to our Facebook page (opens in new tab)" rel="noopener" target="_blank">
               <i class="fab fa-facebook"></i>
             </a>
             <a class="text-color" href="https://www.instagram.com/" aria-label="Go to Intagram (opens in new tab)"
@@ -243,7 +242,7 @@
               <i class="fab fa-twitter-square"></i>
             </a>
             <div class="row footer-header">
-              <!-- Copyright -->
+              <!-- Copyright Section -->
               <div class="copyright text-color">
                 <i class="fas fa-copyright"></i>
                 <p>Signature, 2023</p>
@@ -256,9 +255,11 @@
   </footer>
 
   {% block postloadjs %}
+  <!-- initializes toasts -->
   <script type="text/javascript">
     $('.toast').toast('show');
   </script>
+  <!-- Mailchimp Subscription -->
   <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
   <script type='text/javascript'>
     (function ($) {

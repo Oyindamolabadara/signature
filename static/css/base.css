@@ -17,7 +17,6 @@ h1, h2, h3, h4, h5 {
 }
   
 /* from Bulma */
-
 .icon {
     align-items: center;
     display: inline-flex;
@@ -34,10 +33,6 @@ h1, h2, h3, h4, h5 {
     width: fit-content;
 }
 
-/* .bg-black {
-    background: #000 !important;
-} */
-
 .text-black {
     color: #000 !important;
 }
@@ -49,7 +44,6 @@ h1, h2, h3, h4, h5 {
 .border-color {
     border: 1px solid  #475953 !important;
 }
-
 
 .btn-color {
     background: #475953;
@@ -116,7 +110,6 @@ input[name='q']::placeholder {
 }
 
 /* ------------------------------- bootstrap toasts */
-
 .message-container {
     position: fixed;
     top: 72px;
@@ -184,7 +177,6 @@ input[name='q']::placeholder {
 }
 
 /* Allauth form formatting */
-
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
     color: #6c757d; /* text-secondary */
@@ -192,7 +184,6 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content input {
     border-color: #555;
-    /* border-radius: 0; */
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -265,8 +256,6 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-
-
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -290,18 +279,6 @@ input[name='q']::placeholder {
         padding-top: 164px;
     }
 }
-
-pad the top a bit when navbar is collapsed on mobile 
-@media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
-    }
-}
-
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
@@ -350,31 +327,7 @@ pad the top a bit when navbar is collapsed on mobile
     }
 }
 
-
-/* Reviews */
-
-/* .review-heading {
-    margin-top: 20px;
-    margin-bottom: 28px;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    text-transform: uppercase;
-    position: relative;
-}
-
-.review-heading::after {
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    height: 2px;
-    width: 70px;
-    background: #ff0051;
-    content: "";
-} */
-
+/* ------------------------------------ Reviews */
 .card-row-review{
     margin-top: 40px;
 }
@@ -412,19 +365,15 @@ pad the top a bit when navbar is collapsed on mobile
 }
 
 .review-star-rating {
-    /* background: #000000; */
     color:  #FFD700;
     font-weight: bold;
 }
 
 /* ------------------------------------ Footer */
-footer {
+.footer {
     background-color: #FFFFFF;
     position: relative;
     flex-shrink: 0;
-}
-
-.footer {
     margin-top: 60px;
 }
 
@@ -459,40 +408,3 @@ footer {
 #mc_embed_signup {
     clear: left;
 }
-
-/* .contact-form {
-    margin: 0 auto;
-} */
-
-/* Form */
-
-/* input,
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #0d0000;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-} */
-
-/* button{
-  font-size: 20px;
-} */
-
-/* button:hover {
-  background-color: #f2dea0;
-  border-radius: 4px;
-  padding: 9px;
-} */
-
-/* .form-section {
-  width: 50%;
-  margin: auto;
-  border-radius: 5px;
-  background-color: #f2cb9b;
-  padding: 20px;
-} */

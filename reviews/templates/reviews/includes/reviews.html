@@ -13,10 +13,10 @@
                 Review <i class="fas fa-star"></i></a>
             <!-- Or prompt a user to login to leave a review -->
             {% else %}
-            <h6 class="title-heading-small m-3">Please <a href="{% url 'account_login' %}">log in</a> to add a review of a product.</h6>
+            <h6 class="title-heading-small m-3">Please <a href="{% url 'account_login' %}">log in</a> to add a review of
+                a product.</h6>
             {% endif %}
         </div>
-    
 
         <div class="row text-center text-md-left g-3 card-row-review">
             <!-- Display product reviews -->
@@ -41,9 +41,10 @@
 
                         {% if request.user.is_authenticated %}
                         {% if request.user|lower == review.user|lower %}
-                        <!-- Edit / Delete review if user's review -->
+                        <!-- Edit / Delete user's review -->
                         <p class="edit-buttons text-right">
-                            <a href="{% url 'edit_review' review.id %}" class="btn border-color mt-2 mb-2">Edit my review
+                            <a href="{% url 'edit_review' review.id %}" class="btn border-color mt-2 mb-2">Edit my
+                                review
                                 <i class="far fa-edit">
                                 </i>
                             </a>
@@ -60,17 +61,18 @@
             </div>
             {% if forloop.counter|divisibleby:3 %}
         </div>
-            <div class="row">
-                {% endif %}
-                {% endfor %}
-            </div>
-            {% else %}
-            <!-- Text to display if there are no reviews -->
-            <div class="column">
-                <h5 class="title-heading-small ml-5">There are no reviews for {{ product.name }} yet. Why don't you add one?</h5>
-            </div>
+        <div class="row">
+            {% endif %}
+            {% endfor %}
+        </div>
+        {% else %}
+        <!-- Display text if there are no reviews -->
+        <div class="column">
+            <h5 class="title-heading-small ml-5">There are no reviews for {{ product.name }} yet. Why don't you add one?
+            </h5>
         </div>
     </div>
+</div>
 </div>
 {% endif %}
 {% endblock %}

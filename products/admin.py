@@ -5,7 +5,9 @@ from .models import Product, Category, Review
 
 
 class ProductAdmin(admin.ModelAdmin):
-
+    """
+    class to enable admin to manage product model
+    """
     list_display = (
         'sku',
         'name',
@@ -21,11 +23,14 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class CategoryAdmin(admin.ModelAdmin):
-
+    """
+    class to enable admin to manage category model
+    """
     list_display = (
         'friendly_name',
         'name',
     )
+
 
 @admin.register(Review)
 class ReviewAdmin(admin.ModelAdmin):
@@ -37,6 +42,7 @@ class ReviewAdmin(admin.ModelAdmin):
         'user',
         'review_time',
     )
+
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)

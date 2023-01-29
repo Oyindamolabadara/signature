@@ -5,12 +5,15 @@ from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 
 
 class ProductForm(forms.ModelForm):
-
+    """
+    Form to add products
+    """
     class Meta:
         model = Product
         fields = '__all__'
 
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(label='Image', required=False,
+                             widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
