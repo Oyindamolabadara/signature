@@ -75,21 +75,6 @@
       }
     },
     {
-      "pk": 6,
-      "model": "products.product",
-      "fields": {
-        "sku": "1006",
-        "name": "Silver Ring with Red Gem",
-        "colour": "Silver",
-        "stock_level": "6",
-        "description": "Elevate your hand jewelry with this Silver Ring with Red Gem - it's the ideal go-to piece because there's nothing it can't go with! Perfect, yet simple ring that makes a great addition to anyone's collection.",
-        "price": 19.99,
-        "category": 2,
-        "rating": 5.0,
-        "image": "silver_ring_with_red_gem.jpeg"
-      }
-    },
-    {
       "pk": 7,
       "model": "products.product",
       "fields": {

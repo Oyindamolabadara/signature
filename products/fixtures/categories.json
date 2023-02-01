@@ -38,13 +38,5 @@
          "name":"women_earrings",
          "friendly_name":"Women Earrings"
       }
-   },
-   {
-      "pk":6,
-      "model":"products.category",
-      "fields":{
-         "name":"women_anklets",
-         "friendly_name":"Women Anklets"
-      }
    }
  ]
