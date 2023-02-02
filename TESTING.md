@@ -23,6 +23,8 @@ Please note that in order to enter a UK-based postcode, use a UK card number suc
 ## **Manual Testing**
 
 
+## **Manual Testing**
+
 | Manual Testing                        |                                                           |                                                                                                                                                                                           |      |   |
 |---------------------------------------|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|---|
 |                                       |                                                           |                                                                                                                                                                                           |      |   |
@@ -30,7 +32,7 @@ Please note that in order to enter a UK-based postcode, use a UK card number suc
 | **Reference**                             | **Test object**                                               | **Expected Result**                                                                                                                                                                           | **Pass** |   |
 | **Navbar**                                |                                                           |                                                                                                                                                                                           |      |   |
 |                                     1 | Store Logo/Home link                                      | Directs the user to the home page                                                                                                                                                         | PASS |   |
-|                                     2 | Jewellery link                                           | Opens the jewellery dropdown menu. All jewellery links work                                                                                                                             | PASS |   |
+|                                     2 | Categories link                                           | Opens the categories dropdown menu. All categories links work                                                                                                                             | PASS |   |
 |                                     3 | All Products link                                         | Opens the all products dropdown menu.  All links work                                                                                                                                     | PASS |   |
 |                                     4 | Special Offers link                                       | Opens the special offers dropdown menu.  All the links work.                                                                                                                              | PASS |   |
 |                                     5 | Blog Link                                                 | Directs the user to the 'Blog' page                                                                                                                                                       | PASS |   |
@@ -42,7 +44,7 @@ Please note that in order to enter a UK-based postcode, use a UK card number suc
 |                                    11 | My Profile (signed in users)                              | Directs the user to the profile page                                                                                                                                                      | PASS |   |
 |                                    12 | Product management (superuser)                            | Directs the user to the 'Product management' page                                                                                                                                         | PASS |   |
 |                                    13 | Bag Icon                                                  | Directs the user to their shopping cart page                                                                                                                                              | PASS |   |
-|                                                                                                              
+|                                    14 | Burger menu                                               | Burger menu opens the burger menu with the appropriate links work based on what type of user is signed in                                                                                 | PASS |   |
 | **Footer**                                |                                                           |                                                                                                                                                                                           |      |   |
 |                                     1 | Contact us link                                           | Directs the user to the 'Contact us' page                                                                                                                                                 | PASS |   |
 |                                     2 | Terms & Conditions link                                   | Directs user to the Terms & Conditions page                                                                                                                                               | PASS |   |
@@ -170,6 +172,11 @@ Please note that in order to enter a UK-based postcode, use a UK card number suc
 |                                     1 | Sign In Link                                              | Directs the user to the sign in page                                                                                                                                                      | PASS |   |
 |                                     2 | Back to Login Link                                        | Redirects the user to the sign in page                                                                                                                                                    | PASS |   |
 |                                     3 | Sign Up Link                                              | If the form is valid directs the user to the verify email address page and a confirmation email is sent to the user                                                                       | PASS |   |
+
+[Back to top](#)
+
+
+
 
 [Back to top](#)
 
