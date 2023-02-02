@@ -7,6 +7,19 @@
 ### **Readme File:**
 [Click here to visit the Readme File.](/README.md)
 
+### **Testing Interactively:**
+
+When testing interactively, use a card number, such as 4242 4242 4242 4242. Enter the card number in the Dashboard or in any payment form.
+
+    Use a valid future date, such as 12/34.
+    Use any three-digit CVC (four digits for American Express cards).
+    Use any value you like for other form fields. 
+
+This information has been taken directly from the [Stripe testing documentation](https://stripe.com/docs/testing).
+
+Please note that in order to enter a UK-based postcode, use a UK card number such as 4000 0582 6000 0005.
+
+
 ## **Manual Testing**
 
 
@@ -222,12 +235,15 @@ The [W3C Markup Validator](https://validator.w3.org/ "Link to W3C Markup Validat
 </details>
 
 ### **Python Files**
-The python files were validated using Pep8 Online. However, I am unable to attach their images due to time constraints. 
+The python files were validated using Pep8 Online. However, I was unable to attach their images due to time constraints. 
+
+### **Responsive Testing**
+I have tested this project's responsiveness across multiple devices and screen sizes using Google developer tools.
 
 ### **Bugs**
 
-* My app kept on crashing during my initial deployment to Heroku with the error message; "NameError: name 'application' is not defined". After having another pair of eyes to help go through it, I noticed that I missed out on making 'signature.herokuapp.com' a string in allowed host in settings.py
-
+* My app kept on crashing during my initial deployment to Heroku with the error message; "NameError: name 'application' is not defined". After having another pair of eyes to help go through it, I noticed that I missed out on making 'signature.herokuapp.com' a string in allowed host in settings.py.
+* CSS was not loading on browser, even after hard refresh. I checked on the slack channel and found similar issues. It was solved by clearing my browser cache on chrome. 
 * During the process of creating the contact us form, when trying to send a message through Gmail with my app, I got the error message; OSError: [Errno 101] Network is unreachable. I tried testing getting the emails using the terminal, which worked fine. In the tutorial I used, I was instructed to change settings to allow Gmail to use less secure apps. I found out that the setting is no longer available on google. Google updated their security such that there are port restrictions and emails don't work on GitPod anymore.
 * The Django-Summernote editor was not showing in the Admin panel for my content/body, thus I was unable to add any review or comment to the body. In the console, I got the Uncaught Type Error; Cannot read properties of undefined (reading 'summernote'). I figured that the issue was with the iframe in the settings file. It was set to False. When I changed it to True, it worked fine and I was able to use the editor.
 * Another deployment issue was a ProgrammingError; at /blog/ relation "products_product" does not exist. I had to reset the database entirely from the Elephant SQL dashboard and delete all migration files. I created an env.py file to contain the config var variables, then reloaded the data to the database.

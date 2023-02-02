@@ -3,11 +3,13 @@
 
 <img src="media/readme_images/final_design.png">
 
-## **Table of Contents**
-
 ### **Live Site:**
 
 [Click here to visit the live site.](https://signature.herokuapp.com/)
+
+### **Testing and Code Validation:**
+
+[Click here for details.](/TESTING.md)
 
 ## **About**
 
@@ -103,6 +105,33 @@ The site was designed with a seamless and simple-to-use interface that lets user
 
 [Back to top](#)
 
+## **Databases**
+
+### Category
+The Category model is required so that the site owner can assign products to a Category. This model allows for filtering functionality so that shoppers can search for items wanted by item type.
+
+### Products
+The Products model is required to add products for sale to the site. The site owner only can add, edit, and delete products from here and all users can view the full product list on the site.
+
+### Order & Order Line Items
+The Order model holds the order details of an order placed by the shoppers. This is connected to the Order Line Items model which contains the products ordered by the shopper.
+
+### User Profile
+The User Profile contains delivery information for those who created an account and chose to store their delivery details for faster checkout.
+
+### Review
+The reviews database holds all of the reviews submitted by users with an account. Users can submit, edit and delete reviews posted by themselves whilst logged in to their accounts. This is accessible via the Product Details page for the products they have reviewed.
+
+### User
+For this project, I also used Django's User model to store registration information allowing the users to create an account. Once an account has been created the user is able to create, update and delete their own recipes on the site.
+
+### Blog
+The Blog model allows users to read, like and comment on blog posts. The site owner is able to create, update and delete blog posts. 
+
+[Back to top](#)
+
+***
+
 ## **Web Marketing**
 
 ### **Newsletter**
@@ -148,6 +177,8 @@ The theme for this website was inspired by the landing page image. The [Adobe Ex
 
 I choose the Inter and Roboto Slab fonts, as they both maintain great readability and are versatile. 
 
+***
+
 ## **Technologies, Frameworks and Libraries Used**
 
 * GitPod: was used as IDE to write the code and push it to GitHub.
@@ -164,6 +195,7 @@ I choose the Inter and Roboto Slab fonts, as they both maintain great readabilit
 * Font Awesome: used for all of the icons throughout the site.
 * Mini Web Tool: to generate a new Django Secret Key.
 
+***
 
 ## **Deployment**
 
@@ -295,10 +327,10 @@ Go to Webhooks. Click Add Endpoint button in top right hand corner. Add endpoint
 * [ShutterStock Images](https://www.shutterstock.com/)
 * [Pexels](https://www.pexels.com/)
 * [Markdown best practices](https://www.markdownguide.org/basic-syntax/)
-* [Markdown Table of content generator](http://ecotrust-canada.github.io/markdown-toc/)
 * [Mockup generator](https://techsini.com/multi-mockup/index.php)
 * [Balsamiq Wireframes](https://balsamiq.com/)
 * [Privacy Policy](https://www.privacypolicygenerator.info/) 
+* [Grammarly](https://www.grammarly.com)
 * [Adobe Express](https://www.adobe.com/express/): was used to resize images and generate palettes with colour combinations used for the website. 
 * The Blog Posts were taken from Joshua James Blog.
     * [First Blog Post](https://www.joshuajamesjewellery.co.uk/blog/how-to-take-care-of-your-engagement-ring/)
@@ -312,31 +344,9 @@ Go to Webhooks. Click Add Endpoint button in top right hand corner. Add endpoint
     * [Ordinary Coders](https://ordinarycoders.com/blog/article/build-a-django-contact-form-with-email-backend)
     * [Scottish Coder YouTube Tutorial](https://www.youtube.com/watch?v=1DcySa35fXw)
 
-back to top button
+***
 
-responsiveness
+## **Acknowledgements**
+I would like to thank the tutors at Code Institute and my Code Institute mentor, [Anthony Ugwu](https://github.com/tonyguesswho) for their assistance and guidance.
 
-grammarly
-
-stripe testing
-
-compress images
-
-**Testing interactively**
-
-When testing interactively, use a card number, such as 4242 4242 4242 4242. Enter the card number in the Dashboard or in any payment form.
-
-    Use a valid future date, such as 12/34.
-    Use any three-digit CVC (four digits for American Express cards).
-    Use any value you like for other form fields. 
-
-This information has been taken directly from the [Stripe testing documentation](https://stripe.com/docs/testing).
-
-Please note that in order to enter a UK-based postcode, use a UK card number such as 4000 0582 6000 0005.
-
-Compress images 
-
-Bug: django secret key 
-8. Following setting up the database I generated a new Secret Key, to replace the insecure key that was in settings.py and added: os.environ.get('SECRET_KEY'). I then added the newly generated key to the Config Vars on Heroku.
-
-- [ ] CSS not loading on browser, even after hard refresh. I checked on the slack channel and found similar issues. It was solved by clearing my browser cache on chrome. 
+[Back to top](#)
